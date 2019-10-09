@@ -337,11 +337,18 @@ table th {
 @media screen and (max-width: 700px) {
     body {
         overflow-x: hidden;
+        font-size: 1rem;
     }
     header ul {
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
         margin-left: -20px;
+        line-height: 1;
+    }
+    header a {
+        display: inline;
+    }
+    header li {
+        margin-top: 0px;
     }
     nav {
         width: 100%;
