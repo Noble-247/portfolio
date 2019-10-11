@@ -18,90 +18,109 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav id="navbar" class="nav">
+    <header>
+        <nav id="navbar" class="nav">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
+                    </svg>
+                </a>
+            </span>
+
+            <div class="nav-list-items">
                 <ul class="navlist">
                     <li><a href="#introduction">Home</a></li>
                     <li><a href="#welcome-section">About</a></li>
                     <li><a href="#projects">My Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-        <!--END OF NAVBAR SECTION-->
-
-        <!--BEGIN WELCOME SECTION-->
-        <section id="introduction" class="introduction">
-            <div class="intro">
-                <h1>Hi, <br> I am Emmanuel Ekpobimi</h1>
-                <p><em>A Frontend Web Developer, and A Microsoft Office Applications/CorelDraw Instructor</em></p>
             </div>
-        </section>
+        </nav>
 
-        <section id="welcome-section" class="welcome-section">
-            <div class="welcome">
-                <img class="my-photo" src="images/my-photo.jpg" alt="My Photo">
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#introduction">Home</a>
+            <a href="#welcome-section">About</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <!--END OF NAVBAR SECTION-->
 
-                <div class="welcome-paragraph">
-                    <h2>Hi</h2>
-                    <p>I'm a Frontend Web Developer based Port Harcourt Nigeria, i love developing websites and web applications.</p>
-                    <p>I am also an Instructor, i teach the use of Microsoft Office Applications. </p>
-                </div>
+    <!--BEGIN WELCOME SECTION-->
+    <section id="introduction" class="introduction">
+        <div class="intro">
+            <h1>Hi, <br> I am Emmanuel Ekpobimi</h1>
+            <p><em>A Frontend Web Developer, and A Microsoft Office Applications/CorelDraw Instructor</em></p>
+        </div>
+    </section>
+
+    <section id="welcome-section" class="welcome-section">
+        <div class="welcome">
+            <img class="my-photo" src="images/my-photo.jpg" alt="My Photo">
+
+            <div class="welcome-paragraph">
+                <h2>Hi</h2>
+                <p>I am a Frontend Web Developer based Port Harcourt Nigeria, i love developing websites and web applications.</p>
+                <p>I am also an Instructor, i teach the use of Microsoft Office Applications. </p>
             </div>
-            <div class="clear-float"></div>
-            <h2>My Skills</h2>
-            <article class="skills">
-                <div class="skills">
-                    <div class="frontend-dev-skills">
-                        <h3>Frontend Web Development Skills</h3>
-                        <div class="skill-icons">
-                            <img class="frontend-skill-image" src="images/html5.png" alt="HTMl5 Icon">
-                            <img class="frontend-skill-image" src="images/css3..png" alt="CSS3 Icon">
-                            <img class="frontend-skill-image" src="images/Javascript.png" alt="JavaScript Icon">
-                            <img class="frontend-skill-image" src="images/bootstrap.png" alt="Bootstrap Icon">
-                            <img class="frontend-skill-image" src="images/github (2).png" alt="Git/GitHub Icon">
-                            <img class="frontend-skill-image" src="images/react.png" alt="React.Js Icon">
-                            <!--<img class="frontend-skill-image" src="images/firebase.png" alt="Database Icon">
+        </div>
+        <div class="clear-float"></div>
+        <h2>My Skills</h2>
+        <article class="skills">
+            <div class="skills">
+                <div class="frontend-dev-skills">
+                    <h3>Frontend Web Development Skills</h3>
+                    <div class="skill-icons">
+                        <img class="frontend-skill-image" src="images/html5.png" alt="HTMl5 Icon">
+                        <img class="frontend-skill-image" src="images/css3..png" alt="CSS3 Icon">
+                        <img class="frontend-skill-image" src="images/Javascript.png" alt="JavaScript Icon">
+                        <img class="frontend-skill-image" src="images/bootstrap.png" alt="Bootstrap Icon">
+                        <img class="frontend-skill-image" src="images/github (2).png" alt="Git/GitHub Icon">
+                        <img class="frontend-skill-image" src="images/react.png" alt="React.Js Icon">
+                        <!--<img class="frontend-skill-image" src="images/firebase.png" alt="Database Icon">
                         <img class="frontend-skill-image" src="images/node.png" alt="Node.Js Icon">-->
-                        </div>
-                    </div>
-                    <div class="microsoft-office-skills">
-                        <h3>Microsoft Office Appllication Skills</h3>
-                        <div class="skill-icons">
-                            <img class="ms-0ffice-skills-image" src="images/ms word.png" alt="Microsoft Word Icon">
-                            <img class="ms-0ffice-skills-image" src="images/excel.png" alt="Microsoft Excel Icon">
-                            <img class="ms-0ffice-skills-image" src="images/powerpoint.png" alt="Microsoft PowerPoint Icon">
-                            <img class="ms-0ffice-skills-image" src="images/access1.png" alt="Microsoft Access Icon">
-                            <img class="ms-0ffice-skills-image" src="images/publisher.png" alt="Microsoft Publisher Icon">
-                            <img class="ms-0ffice-skills-image" src="images/outlook.png" alt="Microsoft Outlook Icon">
-                        </div>
                     </div>
                 </div>
-            </article>
-        </section>
+                <div class="microsoft-office-skills">
+                    <h3>Microsoft Office Appllication Skills</h3>
+                    <div class="skill-icons">
+                        <img class="ms-0ffice-skills-image" src="images/ms word.png" alt="Microsoft Word Icon">
+                        <img class="ms-0ffice-skills-image" src="images/excel.png" alt="Microsoft Excel Icon">
+                        <img class="ms-0ffice-skills-image" src="images/powerpoint.png" alt="Microsoft PowerPoint Icon">
+                        <img class="ms-0ffice-skills-image" src="images/access1.png" alt="Microsoft Access Icon">
+                        <img class="ms-0ffice-skills-image" src="images/publisher.png" alt="Microsoft Publisher Icon">
+                        <img class="ms-0ffice-skills-image" src="images/outlook.png" alt="Microsoft Outlook Icon">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
 
-        <section id="projects" class="projects-section">
-            <h2><u>My Projects</u></h2>
-            <div class="project-grid">
-                <div class="project-link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="tribute-page"><img src="images/tribute-page.PNG" alt="" class="project-image">
-                        <h4 class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">/&gt;</span></h4>
-                    </a>
-                </div>
-                <div class="project-link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="survey-form"><img src="images/restaurant-survey-form.PNG" alt="" class="project-image">
-                        <h4 class="project-title"><span class="code">&lt;</span> Survey Form<span class="code">/&gt;</span></h4>
-                    </a>
-                </div>
-                <div class="project-link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="product-landing-page"><img src="images/product-landing-page.PNG" alt="" class="project-image">
-                        <h4 class="project-title"><span class="code">&lt;</span> Landing Page<span class="code">/&gt;</span></h4>
-                    </a>
-                </div>
-                <div class="project-link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="programmers-survival-guide-documentation-page"><img src="" alt="" class="project-image">
-                        <h4 class="project-title"><span class="code">&lt;</span> Yookos Kitchen<span class="code">/&gt;</h4>
+    <section id="projects" class="projects-section">
+        <h2><u>My Projects</u></h2>
+        <div class="project-grid">
+            <div class="project-link">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="tribute-page"><img src="images/tribute-page.PNG" alt="" class="project-image">
+                    <h4 class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">/&gt;</span></h4>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="survey-form"><img src="images/restaurant-survey-form.PNG" alt="" class="project-image">
+                    <h4 class="project-title"><span class="code">&lt;</span> Survey Form<span class="code">/&gt;</span></h4>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="product-landing-page"><img src="images/product-landing-page.PNG" alt="" class="project-image">
+                    <h4 class="project-title"><span class="code">&lt;</span> Landing Page<span class="code">/&gt;</span></h4>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="programmers-survival-guide-documentation-page"><img src="" alt="" class="project-image">
+                    <h4 class="project-title"><span class="code">&lt;</span> Yookos Kitchen<span class="code">/&gt;</h4>
                    </a>         
                 </div>
             </div>
@@ -146,9 +165,18 @@
             <p> &COPY; Emmanuel Peter Ekpobimi </p>
             <p>All rights Reserved</p>
         </footer>
-    </main>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="main.js"></script>
+
+<script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+    }
+  </script>
 </body>
 
 </html>
