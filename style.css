@@ -388,6 +388,21 @@ table th {
     }
 }
 
+@media(max-width:568px) {
+    div.intro {
+        padding-top: 100px;
+    }
+    #introduction h1 {
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+    #introduction p {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
 
 /* @media(max-width:568px) {
     div.nav-list-items {
