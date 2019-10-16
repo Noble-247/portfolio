@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emmanuel Peter Ekpobimi</title>
+
+    <!-------------------------------- Bootstrap CSS ------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+    <!-------------------------------------------- CUSTOME CSS ----------------------------------------->
     <link rel="stylesheet" href="style.css">
+
+    <!------------------------------------------- FAVICON SOURCE/CSS --------------------------------->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
@@ -14,42 +22,42 @@
     <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!------------------------------------ GOOGLE FONT LINK ---------------------------------------->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Sacramento&display=swap" rel="stylesheet">
+
+
+    <!-------------------------------------- FONT AWESOME LINK --------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-    <header>
-        <nav id="navbar" class="nav">
-            <span class="open-slide">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="30" height="30">
-                        <path d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
-                        <path d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
-                        <path d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
-                    </svg>
-                </a>
-            </span>
 
-            <div class="nav-list-items">
-                <ul class="navlist">
-                    <li><a href="#introduction">Home</a></li>
-                    <li><a href="#welcome-section">About</a></li>
-                    <li><a href="#projects">My Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#introduction">Home</a>
-            <a href="#welcome-section">About</a>
-            <a href="#projects">My Projects</a>
-            <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Emmanuel</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#introduction">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#welcome-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <!--END OF NAVBAR SECTION-->
+    </nav>
 
     <!--BEGIN WELCOME SECTION-->
     <section id="introduction" class="introduction">
@@ -65,7 +73,8 @@
 
             <div class="welcome-paragraph">
                 <h2>Hi</h2>
-                <p>I am a Frontend Web Developer based Port Harcourt Nigeria, i love developing websites and web applications.</p>
+                <p>I am a Frontend Web Developer based Port Harcourt Nigeria, i love developing websites and web applications.
+                </p>
                 <p>I am also an Instructor, i teach the use of Microsoft Office Applications. </p>
             </div>
         </div>
@@ -74,7 +83,7 @@
         <article class="skills">
             <div class="skills">
                 <div class="frontend-dev-skills">
-                    <h3>Frontend Web Development Skills</h3>
+                    <h3 class="article-skill-heading">Frontend Web Development Skills</h3>
                     <div class="skill-icons">
                         <img class="frontend-skill-image" src="images/html5.png" alt="HTMl5 Icon">
                         <img class="frontend-skill-image" src="images/css3..png" alt="CSS3 Icon">
@@ -87,7 +96,7 @@
                     </div>
                 </div>
                 <div class="microsoft-office-skills">
-                    <h3>Microsoft Office Appllication Skills</h3>
+                    <h3 class="article-skill-heading">Microsoft Office Appllication Skills</h3>
                     <div class="skill-icons">
                         <img class="ms-0ffice-skills-image" src="images/ms word.png" alt="Microsoft Word Icon">
                         <img class="ms-0ffice-skills-image" src="images/excel.png" alt="Microsoft Excel Icon">
@@ -106,78 +115,133 @@
         <div class="project-grid">
             <div class="project-link">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="tribute-page"><img src="images/tribute-page.PNG" alt="" class="project-image">
-                    <h4 class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">/&gt;</span></h4>
+                    <h4 class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">/&gt;</span>
+                    </h4>
                 </a>
             </div>
             <div class="project-link">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="survey-form"><img src="images/restaurant-survey-form.PNG" alt="" class="project-image">
-                    <h4 class="project-title"><span class="code">&lt;</span> Survey Form<span class="code">/&gt;</span></h4>
+                    <h4 class="project-title"><span class="code">&lt;</span> Survey Form<span class="code">/&gt;</span>
+                    </h4>
                 </a>
             </div>
             <div class="project-link">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="product-landing-page"><img src="images/product-landing-page.PNG" alt="" class="project-image">
-                    <h4 class="project-title"><span class="code">&lt;</span> Landing Page<span class="code">/&gt;</span></h4>
+                    <h4 class="project-title"><span class="code">&lt;</span> Landing Page<span class="code">/&gt;</span>
+                    </h4>
                 </a>
             </div>
             <div class="project-link">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="programmers-survival-guide-documentation-page"><img src="" alt="" class="project-image">
                     <h4 class="project-title"><span class="code">&lt;</span> Yookos Kitchen<span class="code">/&gt;</h4>
-                   </a>         
-                </div>
+                </a>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Contact Me</h2>
-            <p> I can help. I’m currently available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
-            <!--<Button><a href="mailto:noble4special247@gmail.com" class="main-btn email-lnk">message me</a></Button>-->
-            <table class="contact-details">
-                <caption>Contact Details</caption>
-                <tr>
-                    <th>Address</th>
-                    <td>#111 NTA Road Mgbuoba Port Harcourt, Nigeria</td>
-                </tr>
-                <tr>
-                    <th>Phone</th>
-                    <td>+2348039356492,</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>noble4special247@gmail.com, noble4special247@hotmail.com</td>
-                </tr>
-            </table>
-            <ul class="social-1cons">
-                <li>
-                    <a href="https://web.facebook.com/emmanuel.ekpobimi" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="facebook icon"></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Noble-247" target="_blank" rel="noopener noreferrer" id="progile-link"><img src="images/github.png" alt="GitHub icon"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/Nobleman247" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="twitter icon"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/emmanuel-ekpobimi-7ab32b9b/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="linkedin icon"></a>
-                </li>
-            </ul>
-        </section>
-        <footer>
-            <p> &COPY; Emmanuel Peter Ekpobimi </p>
-            <p>All rights Reserved</p>
-        </footer>
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="main.js"></script>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p> I can help. I’m currently available for freelance work. If you have a project that you want to get started,
+            think you need my help with something or just fancy saying hey, then get in touch.</p>
+        <!--<Button><a href="mailto:noble4special247@gmail.com" class="main-btn email-lnk">message me</a></Button>-->
+        <table class="contact-details">
+            <caption class="contact-details">Contact Details</caption>
+            <tr>
+                <th>Address</th>
+                <td>#111 NTA Road Mgbuoba Port Harcourt, Nigeria</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>+2348039356492,</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>noble4special247@gmail.com, noble4special247@hotmail.com</td>
+            </tr>
+        </table>
 
-<script>
-    function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-    }
+        <div class="fa-social-icons">
+            <a href="https://web.facebook.com/emmanuel.ekpobimi" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-facebook-f fa-2x fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/emmanuel-ekpobimi-7ab32b9b/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x fa-fw"></i></a>
+            <a href="https://github.com/Noble-247" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github fa-2x fa-fw"></i></a>
+            <a href="https://twitter.com/Nobleman247" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-twitter fa-2x fa-fw"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p class="footer"> &COPY; Emmanuel Peter Ekpobimi <br> All rights Reserved</p>
+    </footer>
 
-    function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-    }
-  </script>
+    <!------------------------------- BOOTSTRAP JAVASCRIPT/JQUERY CDN --------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- <script src="js/bootstrap.js"></script> -->
+
+
+    <!--------------------------------------- SMOOTH SCROLL CDN ------------------------------------->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <!----------------------------------------- FONT AWESOME CDN ------------------------------------->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+        integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+        crossorigin="anonymous"></script>
+
+    <!-------------------------------------- SLIDE MENU MARKUP/SCRIPT ---------------------------------------->
+    <!-- <header>
+        <nav id="navbar" class="nav">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="3" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="3" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="3" />
+                    </svg>
+                </a>
+            </span>
+                        <div class="nav-list-items">
+                            <ul class="navlist">
+                                <li><a href="#introduction">Home</a></li>
+                                <li><a href="#welcome-section">About</a></li>
+                                <li><a href="#projects">My Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        </nav>
+
+                        <div id="side-menu" class="side-nav">
+                            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                            <a href="#introduction">Home</a>
+                            <a href="#welcome-section">About</a>
+                            <a href="#projects">My Projects</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        </header> -->
+                        <!--END OF NAVBAR SECTION-->
+                        <!-- <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script> -->
 </body>
 
 </html>

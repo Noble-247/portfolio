@@ -33,74 +33,30 @@ body {
 }
 
 
-/**HEADING STYLES */
+/* NAVIGATION STYLES */
 
-header {
-    text-align: start;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: var(--heading-footer-bg-color);
-    z-index: 10;
+.logo {
+    width: 60px;
 }
 
-div.nav-list-items ul {
-    margin-top: 0px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+nav {
+    background-color: var(--heading-footer-bg-color);
+    color: var(--primary-font-color) !important;
 }
 
-div.nav-list-items ul li {
-    margin: 5px 10px;
-    padding: 5px
+.navbar-nav {
+    align-items: flex-start;
 }
 
-div.nav-list-items ul li a {
-    display: inline-block;
-    padding: 5px;
+.navbar {
+    padding: 15px;
 }
 
-div.nav-list-items ul li a:hover {
-    background-color: rgb(124, 116, 116);
-}
-
-div.side-nav {
-    height: auto;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-div.side-nav a {
-    padding-left: 30px;
-    display: block;
-    text-align: left;
-    margin: 10px 0px;
-    transition: 0.3s;
-}
-
-.side-nav a:hover {
-    color: var(--secondary-font-color);
-}
-
-.side-nav .btn-close {
-    position: absolute;
-    top: 0px;
-    right: 22px;
-    font-size: 36px;
-    margin-left: 50px;
-    margin-top: -10px;
+a.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: var(--section-bg-color)!important;
+    font-weight: bolder;
 }
 
 
@@ -230,6 +186,10 @@ h3 {
     color: var(--primary-font-color);
 }
 
+.article-skill-heading {
+    font-size: 1.4rem;
+}
+
 div.skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -256,6 +216,10 @@ h4,
 a {
     color: var(--primary-font-color);
     text-decoration: none;
+}
+
+.project-title {
+    font-size: 1.2rem;
 }
 
 div.project-grid {
@@ -319,8 +283,26 @@ footer {
     background: var(--heading-footer-bg-color);
     color: var(--primary-font-color);
     padding: 5px 0px;
+}
+
+p.footer {
+    margin: 10px;
     font-size: 1.1rem;
-    line-height: 1;
+    line-height: 1.5;
+}
+
+
+/* FA SOCIAL ICONS */
+
+.fa-social-icons {
+    margin: 10px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin,
+.fa-github {
+    color: var(--heading-footer-bg-color);
 }
 
 
@@ -328,10 +310,16 @@ footer {
 
 table {
     text-align: left;
-    margin: 0px auto;
+    margin: 0px auto !important;
 }
 
-table caption {
+caption.contact-details {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: inherit;
+    font-size: inherit;
+    text-align: center;
+    caption-side: top;
     font-weight: bold;
 }
 
@@ -380,7 +368,7 @@ table th {
         padding: 5px;
     }
     table th {
-        width: auto;
+        width: 100px;
     }
     table {
         font-size: .9rem;
@@ -400,7 +388,8 @@ table th {
     }
 }
 
-@media(max-width:568px) {
+
+/* @media(max-width:568px) {
     div.nav-list-items {
         display: none
     }
@@ -410,4 +399,4 @@ table th {
     .open-slide {
         display: none;
     }
-}
+} */
