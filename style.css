@@ -327,6 +327,23 @@ table th {
     width: 100px;
 }
 
+iframe {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica !important;
+    margin: auto;
+    position: static;
+    border: medium none;
+    display: block;
+    overflow: hidden;
+    width: 60% !important;
+    height: 988.767px;
+}
+
+@media (max-width: 600px) {
+    iframe {
+        width: 90% !important;
+    }
+}
+
 @media screen and (max-width: 700px) {
     body {
         /* overflow-x: hidden; */
