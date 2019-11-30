@@ -329,7 +329,7 @@ table th {
 
 iframe {
     font-family: 'Poppins', sans-serif, Arial, Helvetica !important;
-    margin: auto;
+    margin: 15px auto;
     position: static;
     border: medium none;
     display: block;
