@@ -52,6 +52,10 @@ nav {
     padding: 15px;
 }
 
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 30px !important;
+}
+
 a.navbar-brand {
     font-family: 'Sacramento', cursive;
     font-size: 2rem;
