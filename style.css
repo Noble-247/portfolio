@@ -213,6 +213,7 @@ div.skill-icons {
 section#projects {
     background: var(--section-bg-color);
     padding: 20px;
+    margin: 20px 0px;
 }
 
 section#projects h2,
@@ -262,7 +263,7 @@ section#contact {
     background-image: url(images/my-logo-2.png);
     background-attachment: fixed;
     padding: 20px;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 section#contact ul {
@@ -312,10 +313,11 @@ p.footer {
 
 /**TABLE STYLES */
 
-table {
+
+/* table {
     text-align: left;
     margin: 0px auto !important;
-}
+} */
 
 caption.contact-details {
     padding-top: 0.75rem;
